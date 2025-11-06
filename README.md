@@ -173,6 +173,8 @@ curl http://34.29.82.236:80
 | Apply Terraform | `terraform apply -auto-approve` |
 | SSH to private VM | `gcloud compute ssh private-vm --tunnel-through-iap` |
 | Get GKE credentials | `gcloud container clusters get-credentials private-gke --zone us-central1-a --project neon-trilogy-476216-j8` |
+| Deploy app | `kubectl apply -f deployment.yaml` |
+| Check services | `kubectl get svc` |
 | Create Docker secret |
 ```bash
     kubectl create secret docker-registry regcred \
@@ -181,8 +183,6 @@ curl http://34.29.82.236:80
         --docker-password="$(cat /path/at-VM/to/your-key.json)" \
         --docker-email=your-email@example.com
 ```
-| Deploy app | `kubectl apply -f deployment.yaml` |
-| Check services | `kubectl get svc` |
 
 ---
 
