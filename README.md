@@ -102,7 +102,7 @@ gcloud container clusters get-credentials private-gke --zone us-central1-a --pro
 
 ### 5. Prepare Deployment YAML
 ```bash
-curl -O https://raw.githubusercontent.com/MohanadHamada/Deployment/refs/heads/main/deployment.yaml
+curl -O https://raw.githubusercontent.com/MohanadHamada/GCP-Infrastructure/refs/heads/main/deployment.yaml
 ```
 
 ### 6. Create Secret for Artifact Registry Authentication
